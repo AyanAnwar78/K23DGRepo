@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html class</title>
+</head>
+<body>
+    <h1>Form</h1>
+    
+    <form action="">
+        <label for="uname">Enter Name: </label>
+        <input type="text" name="uname" id="uname" size="20" maxlength="5" placeholder="Enter your name" value="Ayan" required>
+        <br><br>
+        <label for="pass">Enter Password: </label>
+        <input type="password" name="pass1" id="pass" placeholder="password should be of atleast 8 character" required>
+        <br><br>
+        <label for="email1">Enter Email: </label>
+        <input type="email" id="email1" required>
+        <br><br>
+        <label for="review">Write a movie review:</label><br>
+        <textarea name="review" id="review" rows="9" cols="40"></textarea>
+        <br><br>
+        <label for="lang">Choose the language you know:</label>
+        <!--in this section is we click on text then it will not work-->
+        <input type="checkbox" name="lang1" id="lang" value="English">English
+        <input type="checkbox" name="lang1" id="lang" value="Hindi" checked>Hindi
+        <input type="checkbox" name="lang1" id="lang" value="Spanish">Spanish
+        <input type="checkbox" name="lang1" id="lang" value="French">French
+        <br><br>
+        <label for="lang">Choose the language you know:</label>
+        <!--in this section is we click on text then it will work-->
+        <input type="checkbox" name="lang1" id="lang1" value="English"><label for="lang1">English</label>
+        <input type="checkbox" name="lang1" id="lang2" value="Hindi" checked><label for="lang2">Hindi</label>
+        <input type="checkbox" name="lang1" id="lang3" value="Spanish"><label for="lang3">Spanish</label>
+        <input type="checkbox" name="lang1" id="lang4" value="French"><label for="lang4">French</label>
+        <br><br>
+        <label for="game">Choose your favourite game:</label>
+        <!--in this section is we click on text then it will not work-->
+        <input type="radio" name="game1" id="game" value="Cric">Cricket
+        <input type="radio" name="game1" id="game" value="Football">Football
+        <input type="radio" name="game1" id="game" value="Badminton">Badminton
+        <input type="radio" name="game1" id="game" value="">Hockey
+        <br><br>
+        <label for="qual">Choose your highest qualification:</label>
+        <!--in this section is we click on text then it will work-->
+        <input type="radio" name="qual1" id="btech" value="btech"><label for="btech">B.Tech</label>
+        <input type="radio" name="qual1" id="mtech" value="mtech"><label for="mtech">M.Tech</label>
+        <input type="radio" name="qual1" id="phd" value="phd"><label for="phd">Ph.d</label>
+        <br><br>
+        <!---->
+        <label for="">Choose your State:</label>
+        <select name="stateselect" id="stateselect">
+            <option value="chooseState">Choose State</option>
+
+            <option value="PB">Punjab</option>
+            <option value="UP">Uttar Pradesh</option>
+            <option value="BH">Bihar</option>
+            <option value="DL">Delhi</option>
+            <option value="UK">Uttrakhand</option>
+            <option value="JK">Jammu&Kashmir</option>
+        </select>
+        <br><br>
+        <label for="selectFile">Choose file </label>
+        <input type="file" name="selectFile" id="selectFile" accept="image/">
+        <br><br>
+        <input type="submit" name="submitform" id="submitform" value="submit form">
+        <input type="reset" name="resetform" id="resetform" value="reset form">
+        <input type="image" name="imgbtn" id="imgbtn" src="./submit.jpg.png" width="100" height="70">
+    </form>
+</body>
+</html>

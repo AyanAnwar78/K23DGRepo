@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html class</title>
+</head>
+<body>
+    <h1>1. List</h1>
+    
+    <h2>Ordered List</h2>
+    <ol type="i" start="4" reversed>
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Python</li>
+    </ol>
+
+    <h2>Unordered List</h2>
+    <ul type="disc">        <!--circle, square, disc, none-->
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Python</li>
+    </ul>
+
+    <h2>Definition List</h2>
+    <dl>
+        <dt><b>Java</b></dt>
+        <dd>It is a programming language.</dd>
+    </dl>
+
+    <br><br><br><br><hr>
+
+    <h1>class practice</h1>
+    <ol type="I">
+        <li>Daily Routine
+            <ol type="i">
+                <li>09.00-11.00---INT219</li>
+                <li>11.00-01.00---CSE310</li>
+            </ol>
+        </li><br>
+        <li>
+            Important things you carry in your bag
+            <ul type="square">
+                <li>pen</li>
+                <li>notebook</li>
+                <li>laptop</li>
+            </ul>
+        </li><br>
+        <li>
+            Project completed till now
+            <ol type="a">
+                <li>Subject 1
+                    <ul type="circle">
+                        <li>Project 1</li>
+                        <li>Project 2</li>
+                    </ul>
+                </li>
+                <li>Subject 2
+                    <ul type="circle">
+                        <li>Project 1</li>
+                        <li>Project 2</li>
+                    </ul>
+                </li>
+
+            </ol>
+        </li><br>
+        <li>
+            Subjects you are studing in this sem
+            <dl>
+                <dt><b>Java</b></dt>
+                <dd>It is a programming language.</dd><br>
+                <dt><b>A.I</b></dt>
+                <dd>It is about artificial intelligence</dd>
+            </dl>
+        </li>
+    </ol>
+
+    <br><br><br><br><hr>
+
+    <h1>Table</h1>
+    <table border="2" cellpadding="14" cellspacing="10" bgcolor="lightyellow" background="image\mountain.jpg">
+        <thead>
+            <tr>
+                <th rowspan="2">Roll no.</th>
+                <th colspan="2">Name</th>
+                <th rowspan="2">Subject</th>
+                <th rowspan="2">Grade</th>
+            </tr>
+            <tr>
+                <!-- <th></th> -->
+                <th>First Name</th>
+                <th>Last Name</th>
+                <!-- <th></th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ayan</td>
+                <td>Anwar</td>
+                <td>DSA</td>
+                <td>o+</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Asad</td>
+                <td>Anwar</td>
+                <td>DSA</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Asif</td>
+                <td>Anwar</td>
+                <td>DSA</td>
+                <td>A</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br><br><br><hr>
+
+
+    <h1>Class Task using Table</h1>
+
+    <table border="4">
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th colspan="2" rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8.00 a.m.</td>
+                <td rowspan="2">5.00 p.m.</td>
+                <td >Introduction to XML</td>
+                <tr>
+                    <td>Validity DTD and Relax NG</td>
+                </tr>
+            </tr>
+
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>8.00 a.m.</td>
+                <td>11.00 a.m.</td>
+                <td>abc</td>
+                <tr>
+                    <td>11.00 a.m.</td>
+                    <td>2.00 p.m.</td>
+                    <td>cde</td>
+                </tr>
+                <tr>
+                    <td>2.00 p.m.</td>
+                    <td>5.00 p.m.</td>
+                    <td>efg</td>
+                </tr>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <br><br><br><br><hr><br><br>
+
+    <h1>Form</h1>
+    
+    <form action="">
+        <label for="uname">Enter Name: </label>
+        <input type="text" name="uname" id="uname" size="20" maxlength="5" placeholder="Enter your name" value="Ayan" required>
+        <br><br>
+        <label for="pass">Enter Password: </label>
+        <input type="password" name="pass1" id="pass" placeholder="password should be of atleast 8 character" required>
+        <br><br>
+        <label for="email1">Enter Email: </label>
+        <input type="email" id="email1" required>
+        <br><br>
+        <input type="submit" name="submitform" value="submit form">
+    </form>
+</body>
+</html>
